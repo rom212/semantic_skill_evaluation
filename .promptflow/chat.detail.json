@@ -1,0 +1,139 @@
+{
+  "flow_runs": [
+    {
+      "run_id": "dd14d91f-8256-49cc-ad5e-2e723f20853e_0",
+      "status": "Completed",
+      "error": null,
+      "inputs": {
+        "chat_history": [
+          {
+            "inputs": {
+              "question": "You ve been approved"
+            },
+            "outputs": {
+              "answer": "spam"
+            }
+          },
+          {
+            "inputs": {
+              "question": "Call me tomorrow at 4pm"
+            },
+            "outputs": {
+              "answer": "not spam"
+            }
+          },
+          {
+            "inputs": {
+              "question": "Check out our new cc card"
+            },
+            "outputs": {
+              "answer": "spam"
+            }
+          },
+          {
+            "inputs": {
+              "question": "are you feeling betteR?"
+            },
+            "outputs": {
+              "answer": "not spam"
+            }
+          },
+          {
+            "inputs": {
+              "question": "hello"
+            },
+            "outputs": {
+              "answer": "not spam"
+            }
+          }
+        ],
+        "question": "hello dear subscriber"
+      },
+      "output": {
+        "answer": "spam"
+      },
+      "metrics": null,
+      "request": null,
+      "parent_run_id": "dd14d91f-8256-49cc-ad5e-2e723f20853e",
+      "root_run_id": "dd14d91f-8256-49cc-ad5e-2e723f20853e",
+      "source_run_id": null,
+      "flow_id": "template_chat_flow",
+      "start_time": "2023-12-12T00:23:17.891302Z",
+      "end_time": "2023-12-12T00:23:18.162753Z",
+      "index": 0,
+      "api_calls": [
+        {
+          "name": "my_spam_detection_tool",
+          "type": "Tool",
+          "inputs": {
+            "input1": "hello dear subscriber"
+          },
+          "output": "spam",
+          "start_time": 1702358597.893315,
+          "end_time": 1702358598.161522,
+          "error": null,
+          "children": null,
+          "node_name": "python_node_ydoa"
+        }
+      ],
+      "variant_id": "",
+      "name": "",
+      "description": "",
+      "tags": null,
+      "system_metrics": {
+        "duration": 0.271451,
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "result": {
+        "answer": "spam"
+      },
+      "upload_metrics": false
+    }
+  ],
+  "node_runs": [
+    {
+      "node": "python_node_ydoa",
+      "flow_run_id": "dd14d91f-8256-49cc-ad5e-2e723f20853e",
+      "run_id": "dd14d91f-8256-49cc-ad5e-2e723f20853e_python_node_ydoa_0",
+      "status": "Completed",
+      "inputs": {
+        "input1": "hello dear subscriber"
+      },
+      "output": "spam",
+      "metrics": null,
+      "error": null,
+      "parent_run_id": "dd14d91f-8256-49cc-ad5e-2e723f20853e_0",
+      "start_time": "2023-12-12T00:23:17.892313Z",
+      "end_time": "2023-12-12T00:23:18.161522Z",
+      "index": 0,
+      "api_calls": [
+        {
+          "name": "my_spam_detection_tool",
+          "type": "Tool",
+          "inputs": {
+            "input1": "hello dear subscriber"
+          },
+          "output": "spam",
+          "start_time": 1702358597.893315,
+          "end_time": 1702358598.161522,
+          "error": null,
+          "children": null,
+          "node_name": "python_node_ydoa"
+        }
+      ],
+      "variant_id": "",
+      "cached_run_id": null,
+      "cached_flow_run_id": null,
+      "logs": {
+        "stdout": "",
+        "stderr": ""
+      },
+      "system_metrics": {
+        "duration": 0.269209
+      },
+      "result": "spam"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "nodes": {
+    "python_node_ydoa": {
+      "variant_0": {
+        "inputs": {
+          "input1": []
+        }
+      }
+    }
+  }
+}
