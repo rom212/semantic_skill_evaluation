@@ -1,0 +1,10 @@
+{"message" : "You've won!!!" , "ground_truth" : "spam" , "chat_history": []}
+{"message" : "Hey don't forget our meeting tomorrow" , "ground_truth" : "not spam" , "chat_history": []}
+{"message" : "A prompt recovery to you, feel better soon" , "ground_truth" : "not spam" , "chat_history": []}
+{"message" : "You qualify for our new credit cards!" , "ground_truth" : "spam" , "chat_history": []}
+{"message" : "Congrats, click here to redeem your prize" , "ground_truth" : "spam" , "chat_history": []}
+{"message" : "The exec briefing tomorrow will be rescheduled" , "ground_truth" : "not spam" , "chat_history": []}
+{"message" : "reminder to fill out your activity report by Friday" , "ground_truth" : "not spam" , "chat_history": []}
+{"message" : "F_R_E_E C_R_Y_P_T_O" , "ground_truth" : "spam" , "chat_history": []}
+{"message" : "Check out our winter sale" , "ground_truth" : "spam" , "chat_history": []}
+{"message" : "Don't forget to pick up the kids at school this afternoon" , "ground_truth" : "not spam" , "chat_history": []}

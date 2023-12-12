@@ -6,7 +6,7 @@ inputs:
   chat_history:
     type: list
     is_chat_history: true
-  question:
+  message:
     type: string
     is_chat_input: true
 outputs:
@@ -21,4 +21,4 @@ nodes:
     type: code
     path: python_node_ydoa.py
   inputs:
-    input1: ${inputs.question}
+    input1: ${inputs.message}
